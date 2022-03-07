@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(32, 32, 32);
+}
+body::after {
+  content: "M";
+  font-size: 1000px;
+  position: absolute;
+  color: rgb(55, 56, 56);
+  /* filter: blur(1px); */
+
+  z-index: -1;
+}
+.glassAndFlex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 4px;
+  background-color: rgba(240, 248, 255, 0.14);
+  backdrop-filter: blur(2px);
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px rgb(141, 138, 138);
+}
+input {
+  margin-top: 18px;
+  padding: 4px 2px;
+}
